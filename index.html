@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>The Pizza Maker - COMP1073 Assignment 3</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="tomatoes-row">
+                <fig>
+                    <!-- tomato images -->
+                    <img src="img/two-tomatoes.png" alt="tomatoes" class="tomatoes">
+                    <img src="img/two-tomatoes.png" alt="tomatoes" class="tomatoes">
+                    <img src="img/two-tomatoes.png" alt="tomatoes" class="tomatoes">
+                    <img src="img/two-tomatoes.png" alt="tomatoes" class="tomatoes">
+                    <img src="img/two-tomatoes.png" alt="tomatoes" class="tomatoes">
+                    <figcaption>
+                        <p>"tomato hand drawing illustration" by Santima Suksawat (vecteezy.com - image description page)</p>
+                    </figcaption>
+                </fig>
+            </div>
+            <!-- main heading -->
+            <h1>Welcome to Tomato Bites!!!</h1>
+        </header>
+        <main>
+            <h2>Please Order Your Pizza</h2>
+            <form id="order-and-info" method="get">
+                <input type="hidden" name="form_sent" value="1" />
+                <fieldset>
+                    <legend>How Hungry Are You?</legend>
+                    <div>
+                        <!-- pizza quantity -->
+                        <label for="amount">How many pizzas would you like to order?</label>
+                        <select name="amount" id="amount">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                            <option value="four">Four</option>
+                            <option value="five">Five</option>
+                            <option value="six">Six</option>
+                            <option value="seven">Seven</option>
+                            <option value="eight">Eight</option>
+                            <option value="nine">Nine</option>
+                            <option value="ten">Ten</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- pizza size -->
+                        <label for="size">What size do you want your pizza to be?</label>
+                        <select name="size" id="size">
+                            <option value="small">Small (8 in)</option>
+                            <option value="medium">Medium (12 in)</option>
+                            <option value="large">Large (16 in)</option>
+                            <option value="extra-large">Extra-Large (18 in)</option>
+                        </select>
+                    </div>
+                    
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Go Crazy</legend>
+                    <div>
+                        <!-- pizza crust -->
+                        <label for="crust">Which crust sounds good?</label>
+                        <select name="crust" id="crust">
+                            <option value="thin">Thin</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="sicilian">Sicilian / Square</option>
+                            <option value="gluten free">Gluten-free</option>
+                            <option value="neapolitan">Neapolitan</option>
+                            <option value="deep dish">Deep-dish</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- pizza sauce -->
+                        <label for="sauce">Which sauce do you want on your pizza?</label>
+                        <select name="sauce" id="sauce">
+                            <option value="tomato">Tomato</option>
+                            <option value="white">White</option>
+                            <option value="garlic butter">Garlic butter</option>
+                            <option value="pesto">Pesto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- three pizza toppings  -->
+                        <label for="topping">Please choose 3 toppings:</label>
+                        <select name="topping1" id="topping1">
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="onions">Onions</option>
+                            <option value="black olives">Black Olives</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="tomato">Tomato</option>
+                            <option value="spinach">Spinach</option>
+                            <option value="pineapple">Pineapple</option>
+                            <option value="jalapeño">Jalapeño</option>
+                            <option value="bacon">Bacon</option>
+                            <option value="green pepper">Green Pepper</option>
+                        </select>
+                        <select name="topping2" id="topping2">
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="onions">Onions</option>
+                            <option value="black olives">Black Olives</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="tomato">Tomato</option>
+                            <option value="spinach">Spinach</option>
+                            <option value="pineapple">Pineapple</option>
+                            <option value="jalapeño">Jalapeño</option>
+                            <option value="bacon">Bacon</option>
+                            <option value="green pepper">Green Pepper</option>
+                        </select>
+                        <select name="topping3" id="topping3">
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="onions">Onions</option>
+                            <option value="black olives">Black Olives</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="tomato">Tomato</option>
+                            <option value="spinach">Spinach</option>
+                            <option value="pineapple">Pineapple</option>
+                            <option value="jalapeño">Jalapeño</option>
+                            <option value="bacon">Bacon</option>
+                            <option value="green pepper">Green Pepper</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <!-- cheese type -->
+                        <label for="cheeseType">Which type of cheese would you like?</label>
+                        <select name="cheeseType" id="cheeseType">
+                            <option value="mozzarella">Mozzarella</option>
+                            <option value="cheddar">Cheddar</option>
+                            <option value="parmesan">Parmesan</option>  
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information for Delivery</legend>
+                    <div>
+                        <!-- first name input -->
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" size="25" maxlength="50"> 
+                    </div>
+                    <div>
+                        <!-- last name input -->
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" size="25" maxlength="50">
+                    </div>
+                </fieldset>
+                <!-- reset and submit buttons -->
+                <button type="submit">Order Pizza</button>
+            </form>
+            <div id="output"></div>
+        </main>
+    </body>
+</html>
